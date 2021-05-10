@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.login.display">
+
+    <EditText
+        android:id="@+id/step1"
+        android:layout_width="144dp"
+        android:layout_height="76dp"
+        android:text="TextView"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="117dp"
+        tools:layout_editor_absoluteY="101dp" />
+
+    <EditText
+        android:id="@+id/step2"
+        android:layout_width="149dp"
+        android:layout_height="61dp"
+        android:text="TextView"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="119dp"
+        tools:layout_editor_absoluteY="192dp" />
+
+    <EditText
+        android:id="@+id/step3"
+        android:layout_width="130dp"
+        android:layout_height="53dp"
+        android:text="TextView"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="126dp"
+        tools:layout_editor_absoluteY="278dp" />
+
+    <EditText
+        android:id="@+id/cookTime"
+        android:layout_width="127dp"
+        android:layout_height="67dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="119dp"
+        tools:layout_editor_absoluteY="358dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/ingredientField"
+        android:layout_width="189dp"
+        android:layout_height="68dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="471dp"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>

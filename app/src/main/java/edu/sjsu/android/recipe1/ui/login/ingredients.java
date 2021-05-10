@@ -4,13 +4,26 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import java.util.ArrayList;
+
 import edu.sjsu.android.recipe1.R;
 
-public class ingredients extends AppCompatActivity {
+public class  ingredients extends AppCompatActivity {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ingrediants);
+    String ingredientsName;
+    int ingredientsCount;
+    ArrayList<String> ingredients;
+
+    public ingredients(String ingrediant)
+    {
+        this.ingredientsName = ingrediant;
+        ingredientsCount++;
+
+    }
+
+    public void add(String name)
+    {
+        ingredients.add(name);
     }
 }
+
