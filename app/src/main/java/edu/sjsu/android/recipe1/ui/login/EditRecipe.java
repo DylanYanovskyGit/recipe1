@@ -16,25 +16,24 @@ public class EditRecipe extends AppCompatActivity {
     EditText ingrediants1;
     EditText ingrediants2;
     EditText ingrediants3;
+    EditText cookTime;
     Button add;
-    Button delete;
+    Button addSteps;
     Button nextSteps;
     recipeDesign data;
     ingredients ingredient;
-    EditText cookTime;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.edit_steps);
-        ingrediants1 = findViewById(R.id.textView5);
-        ingrediants2 = findViewById(R.id.textView6);
-        ingrediants3 = findViewById(R.id.textView7);
-        cookTime = findViewById(R.id.cookTime);
-        nextSteps = findViewById(R.id.addSteps);
+        ingrediants1 = findViewById(R.id.textView);
+        ingrediants2 = findViewById(R.id.textView2);
+        ingrediants3 = findViewById(R.id.textView3);
+        cookTime = findViewById(R.id.textView4);
+        addSteps = findViewById(R.id.addSteps);
         add = findViewById(R.id.add);
-
-
 
 
         add.setOnClickListener(new View.OnClickListener() {
@@ -53,7 +52,7 @@ public class EditRecipe extends AppCompatActivity {
             }
         });
 
-        nextSteps.setOnClickListener(new View.OnClickListener() {
+        addSteps.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent nextPage = new Intent(EditRecipe.this, Recipe_Steps.class);

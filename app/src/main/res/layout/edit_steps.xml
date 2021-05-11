@@ -17,7 +17,7 @@ tools:context=".ui.login.EditRecipe">
 
         app:layout_constraintBottom_toTopOf="@+id/addSteps"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="52dp" />
+        tools:layout_editor_absoluteX="35dp" />
 
     <EditText
         android:id="@+id/textView"
@@ -27,7 +27,7 @@ tools:context=".ui.login.EditRecipe">
         android:text="TextView"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="72dp" />
+        tools:layout_editor_absoluteX="16dp" />
 
     <EditText
         android:id="@+id/textView2"
@@ -38,7 +38,8 @@ tools:context=".ui.login.EditRecipe">
         android:text="TextView"
         app:layout_constraintBottom_toBottomOf="@+id/textView"
         app:layout_constraintBottom_toTopOf="@+id/textView3"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp" />
 
     <EditText
         android:id="@+id/textView3"
@@ -52,17 +53,18 @@ tools:context=".ui.login.EditRecipe">
         app:layout_constraintBottom_toBottomOf="@+id/textView2"
         app:layout_constraintBottom_toTopOf="@+id/textView4"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="5dp" />
+        tools:layout_editor_absoluteX="14dp" />
 
     <Button
         android:id="@+id/addSteps"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="148dp"
         android:text="add steps"
-        app:layout_constraintBottom_toBottomOf="@+id/add"
 
+        app:layout_constraintBottom_toBottomOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="52dp" />
+        tools:layout_editor_absoluteX="35dp" />
 
     <EditText
         android:id="@+id/textView4"
@@ -74,6 +76,6 @@ tools:context=".ui.login.EditRecipe">
         app:layout_constraintBottom_toBottomOf="@+id/textView3"
         app:layout_constraintBottom_toTopOf="@+id/add"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="26dp" />
+        tools:layout_editor_absoluteX="3dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
