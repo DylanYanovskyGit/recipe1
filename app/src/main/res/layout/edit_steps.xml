@@ -1,0 +1,79 @@
+
+<androidx.constraintlayout.widget.ConstraintLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+tools:context=".ui.login.EditRecipe">
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:text="add"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintBottom_toTopOf="@+id/ad"
+
+        tools:layout_editor_absoluteX="124dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/textView"
+        android:layout_width="133dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="35dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        tools:layout_editor_absoluteX="106dp"
+        tools:ignore="MissingConstraints" />
+
+
+    <EditText
+        android:id="@+id/textView2"
+        android:layout_width="131dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="57dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/add"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        tools:layout_editor_absoluteX="106dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/textView3"
+
+        android:layout_width="126dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="25dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        tools:layout_editor_absoluteX="106dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/addSteps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:text="add steps"
+
+        app:layout_constraintBottom_toBottomOf="@+id/add"
+        tools:layout_editor_absoluteX="124dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/textView4"
+        android:layout_width="137dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="22dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/textView3"
+        app:layout_constraintBottom_toTopOf="@+id/addSteps"
+        app:layout_constraintTop_toBottomOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="101dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

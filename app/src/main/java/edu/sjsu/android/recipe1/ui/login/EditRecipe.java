@@ -26,12 +26,13 @@ public class EditRecipe extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_recipe_steps);
+        setContentView(R.layout.edit_steps);
         ingrediants1 = findViewById(R.id.textView5);
         ingrediants2 = findViewById(R.id.textView6);
         ingrediants3 = findViewById(R.id.textView7);
         cookTime = findViewById(R.id.cookTime);
         nextSteps = findViewById(R.id.addSteps);
+        add = findViewById(R.id.add);
 
 
 
