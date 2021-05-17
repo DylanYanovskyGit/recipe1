@@ -22,6 +22,7 @@ public class Recipe_Steps extends  AppCompatActivity{
         EditRecipe recipe;
 
 
+
         @Override
         public <T extends View> T findViewById(int id) {
             return super.findViewById(id);
@@ -44,6 +45,7 @@ public class Recipe_Steps extends  AppCompatActivity{
             add.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
+                    design.addRecipeSteps(steps);
                     display display = new display(steps, recipe, design);
                     display.display();
                 }
