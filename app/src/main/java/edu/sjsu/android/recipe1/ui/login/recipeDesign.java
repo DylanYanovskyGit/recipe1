@@ -21,6 +21,20 @@ public class recipeDesign {
         this.recipe_steps = recipe_steps;
     }
 
+    public int getCookTime(){
+        return this.cookTime;
+    }
 
+    public ArrayList<ingredients> getIngredientList(){
+        return ingredientList;
+    }
+
+    public ArrayList<String> getRecipe_steps(){
+        return recipe_steps;
+    }
+
+    public void setCookTime(int cookTime){
+        this.cookTime = cookTime;
+    }
 
 }
