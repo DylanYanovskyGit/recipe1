@@ -6,7 +6,6 @@ public class recipeDesign {
 
     ArrayList<ingredients> ingredientList;
     ArrayList<String> recipe_steps;
-
     int cookTime;
 
 

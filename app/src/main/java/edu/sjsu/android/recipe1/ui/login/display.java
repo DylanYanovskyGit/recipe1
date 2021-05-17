@@ -12,11 +12,12 @@ public class display extends AppCompatActivity {
 
 
     EditText step1;
-    EditText step2;
+    EditText recipeStepsDisplay;
     EditText step3;
     ArrayList<String> steps;
     EditRecipe recipedata;
     recipeDesign recipedesign;
+    Recipe_Steps recipe_steps;
     EditText cookTime;
     EditText ingredientField;
     String concat = "";
@@ -34,7 +35,7 @@ public class display extends AppCompatActivity {
         ingredientField = findViewById(R.id.ingredientField);
         cookTime = findViewById(R.id.cookTime);
 
-        step2= findViewById(R.id.step2);
+        recipeStepsDisplay= findViewById(R.id.step2);
         step3= findViewById(R.id.step3);
 
     }
@@ -42,10 +43,19 @@ public class display extends AppCompatActivity {
 
     public void display() {
         String concat = "";
+        String steps = "";
         for(ingredients ingredients : recipedesign.ingredientList)
         {
             concat += ingredients.toString();
         }
+        ingredientField.setText(concat);
+        cookTime.setText(recipedesign.cookTime);
+        for(String step: recipedesign.recipe_steps)
+        {
+            steps += step;
+        }
+        recipeStepsDisplay.setText(steps);
+
     }
 
 }
