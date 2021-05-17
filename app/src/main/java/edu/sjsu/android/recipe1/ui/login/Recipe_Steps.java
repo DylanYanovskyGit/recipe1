@@ -47,8 +47,8 @@ public class Recipe_Steps extends  AppCompatActivity{
                 @Override
                 public void onClick(View view) {
                     design.addRecipeSteps(steps);
-                  //  display display = new display(steps, recipe, design);
-                    //display.display();
+                   display display = new display(design);
+                    display.display();
                 }
             });
 
