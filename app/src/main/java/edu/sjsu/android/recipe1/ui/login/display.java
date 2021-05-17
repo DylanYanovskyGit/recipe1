@@ -10,7 +10,6 @@ import edu.sjsu.android.recipe1.R;
 
 public class display extends AppCompatActivity {
 
-
     EditText step1;
     EditText recipeStepsDisplay;
     EditText step3;
