@@ -5,17 +5,22 @@ import java.util.ArrayList;
 public class recipeDesign {
 
     ArrayList<ingredients> ingredientList;
+    ArrayList<Recipe_Steps> recipe_steps;
+
     int cookTime;
 
 
-    public recipeDesign(ingredients ingredients)
+    public recipeDesign(ArrayList<ingredients> ingredients,  int cookTime)
     {
-
+        this.ingredientList = ingredients;
+        this.cookTime = cookTime;
     }
 
-    public void addIngrediant(ingredients ingredient)
+    public void addRecipeSteps(ArrayList<Recipe_Steps> recipe_steps)
     {
-        ingredientList.add(ingredient);
+        this.recipe_steps = recipe_steps;
     }
+
+
 
 }

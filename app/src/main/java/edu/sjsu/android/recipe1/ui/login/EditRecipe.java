@@ -21,7 +21,9 @@ public class EditRecipe extends AppCompatActivity {
     Button addSteps;
     Button nextSteps;
     recipeDesign data;
-    ingredients ingredient;
+    ingredients ingredient1;
+    ingredients ingredient2;
+    ingredients ingredient3;
 
 
     @Override
@@ -43,11 +45,14 @@ public class EditRecipe extends AppCompatActivity {
                 String ingrediant2 = ingrediants2.getText().toString();
                 String ingrediant3 = ingrediants3.getText().toString();
                 int cookTimer = Integer.parseInt(cookTime.getText().toString().trim());
-                ingredient.add(ingrediant1);
-                ingredient.add(ingrediant2);
-                ingredient.add(ingrediant3);
-                data.addIngrediant(ingredient);
+                ingredient1.add(ingrediant1);
+                ingredient2.add(ingrediant2);
+                ingredient3.add(ingrediant3);
+                ingrediantsList.add(ingredient1);
+                ingrediantsList.add(ingredient2);
+                ingrediantsList.add(ingredient3);
                 data.cookTime = cookTimer;
+                data = new recipeDesign(ingrediantsList, cookTimer);
 
             }
         });
