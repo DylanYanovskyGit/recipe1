@@ -21,9 +21,8 @@ public class display extends AppCompatActivity {
     EditText ingredientField;
     String concat = "";
 
-    public display(ArrayList<String> steps, EditRecipe recipe, recipeDesign design) {
-        this.steps = steps;
-        this.recipedata = recipe;
+    public display(recipeDesign design) {
+
         this.recipedesign = design;
 
     }
@@ -42,19 +41,11 @@ public class display extends AppCompatActivity {
 
 
     public void display() {
-        step1.setText(steps.get(0));
-        step2.setText(steps.get(1));
-        step3.setText(steps.get(2));
-        cookTime.setText(recipedesign.cookTime);   //create a text field in the .xml file
-        for(ingredients ingredient : recipedesign.ingredientList)
+        String concat = "";
+        for(ingredients ingredients : recipedesign.ingredientList)
         {
-
-            concat += ingredient.toString();
-
+            concat += ingredients.toString();
         }
-        ingredientField.setText(concat);
-
-
     }
 
 }
