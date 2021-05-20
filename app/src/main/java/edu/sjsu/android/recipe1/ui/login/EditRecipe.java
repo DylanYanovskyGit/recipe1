@@ -44,7 +44,8 @@ public class EditRecipe extends AppCompatActivity {
                 String ingrediant1 = ingrediants1.getText().toString();
                 String ingrediant2 = ingrediants2.getText().toString();
                 String ingrediant3 = ingrediants3.getText().toString();
-                int cookTimer = Integer.parseInt(cookTime.getText().toString().trim());
+                String cookTimer = cookTime.getText().toString().trim();
+
                 ingredient1.add(ingrediant1);
                 ingredient2.add(ingrediant2);
                 ingredient3.add(ingrediant3);

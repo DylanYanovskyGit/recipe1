@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import edu.sjsu.android.recipe1.R;
 
 public class Recipe_Steps extends  AppCompatActivity{
-        ArrayList<String> steps = new ArrayList<String>(0);
+        ArrayList<String> steps;
         EditText textfield1;
         EditText textField2;
         EditText textField3;
@@ -38,14 +38,16 @@ public class Recipe_Steps extends  AppCompatActivity{
             textField2 = findViewById(R.id.textView6);
             textField3 = findViewById(R.id.textView7);
             add = findViewById(R.id.addSteps);
+            steps = new ArrayList<>(3);
 
-            steps.add(textfield1.getText().toString().trim());
-            steps.add(textField2.getText().toString().trim());
-            steps.add(textField3.getText().toString().trim());
+
 
             add.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
+                    steps.add(textfield1.getText().toString().trim());
+                    steps.add(textField2.getText().toString().trim());
+                    steps.add(textField3.getText().toString().trim());
                     design.addRecipeSteps(steps);
                    display display = new display(design);
                     display.display();

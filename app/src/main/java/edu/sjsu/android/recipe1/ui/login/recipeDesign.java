@@ -6,10 +6,10 @@ public class recipeDesign {
 
     ArrayList<ingredients> ingredientList;
     ArrayList<String> recipe_steps;
-    int cookTime;
+    String cookTime;
 
 
-    public recipeDesign(ArrayList<ingredients> ingredients,  int cookTime)
+    public recipeDesign(ArrayList<ingredients> ingredients, String cookTime)
     {
         this.ingredientList = ingredients;
         this.cookTime = cookTime;
@@ -20,7 +20,7 @@ public class recipeDesign {
         this.recipe_steps = recipe_steps;
     }
 
-    public int getCookTime(){
+    public String getCookTime(){
         return this.cookTime;
     }
 
@@ -32,7 +32,7 @@ public class recipeDesign {
         return recipe_steps;
     }
 
-    public void setCookTime(int cookTime){
+    public void setCookTime(String cookTime){
         this.cookTime = cookTime;
     }
 
