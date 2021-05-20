@@ -11,8 +11,15 @@ import edu.sjsu.android.recipe1.data.LoginRepository;
  * ViewModel provider factory to instantiate LoginViewModel.
  * Required given LoginViewModel has a non-empty constructor
  */
+
 public class LoginViewModelFactory implements ViewModelProvider.Factory {
 
+    /***
+     * modelClass is used to create a new LoginViewModel
+     * @param modelClass
+     * @param <T>
+     * @return
+     */
     @NonNull
     @Override
     @SuppressWarnings("unchecked")
