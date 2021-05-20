@@ -14,6 +14,10 @@ public class  ingredients extends AppCompatActivity {
     int ingredientsCount;
     ArrayList<String> ingredients;
 
+    /**
+     * creates an ingredient given name, ingredient, and increases ingredientsCount
+     * @param ingrediant
+     */
     public ingredients(String ingrediant)
     {
         this.ingredientsName = ingrediant;
@@ -21,6 +25,10 @@ public class  ingredients extends AppCompatActivity {
 
     }
 
+    /**
+     * add an ingredient name to the ingredient arraylist
+     * @param name
+     */
     public void add(String name)
     {
         ingredients.add(name);

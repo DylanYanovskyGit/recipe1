@@ -11,6 +11,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 
+/**
+ * EditRecipe has one method. It retrieves the current recipeDesign information,
+ * creates a visualization, and updates the recipe with user input.
+ */
 public class EditRecipe extends AppCompatActivity {
     ArrayList<ingredients> ingrediantsList = new ArrayList<>();
     EditText ingrediants1;
@@ -25,7 +29,12 @@ public class EditRecipe extends AppCompatActivity {
     ingredients ingredient2;
     ingredients ingredient3;
 
-
+    /**
+     * Takes current saved state
+     * updates ingredients, cookTime using user inputs with setOnClickListener
+     * {@inheritDoc}
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -11,6 +11,11 @@ import edu.sjsu.android.recipe1.data.Result;
 import edu.sjsu.android.recipe1.data.model.LoggedInUser;
 import edu.sjsu.android.recipe1.R;
 
+/**
+ * LoginViewModel is a class that manages all login information
+ * It creates a login state and repository,
+ * allows you to login with a user name and password, and verifies the login
+ */
 public class LoginViewModel extends ViewModel {
 
     private MutableLiveData<LoginFormState> loginFormState = new MutableLiveData<>();

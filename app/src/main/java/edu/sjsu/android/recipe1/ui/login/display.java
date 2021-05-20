@@ -8,6 +8,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.util.ArrayList;
 import edu.sjsu.android.recipe1.R;
 
+
+/**
+ * The class display manages the information to display
+ * It simplifies/combines the data for easier handling
+ */
 public class display extends AppCompatActivity {
 
     EditText step1;
@@ -27,6 +32,12 @@ public class display extends AppCompatActivity {
 
     }
 
+    /**
+     * Starts new activity, creates view from state
+     * From state, retrieves ingredients, cook time, recipe steps
+     * {@inheritDoc}
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,7 +50,10 @@ public class display extends AppCompatActivity {
 
     }
 
-
+    /**
+     * creates two strings, concat: ingredients concatenated
+     *                      steps:  recipe steps concatenated
+     */
     public void display() {
         String concat = "";
         String steps = "";
