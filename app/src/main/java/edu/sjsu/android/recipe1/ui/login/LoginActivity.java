@@ -1,3 +1,6 @@
+//File: LoginActivity
+// LoginActivity works on the login portion of the application
+
 package edu.sjsu.android.recipe1.ui.login;
 
 import android.app.Activity;
@@ -30,7 +33,12 @@ import edu.sjsu.android.recipe1.ui.login.LoginViewModelFactory;
 public class LoginActivity extends AppCompatActivity {
 
     private LoginViewModel loginViewModel;
-
+    /**
+     * This method onCreate creates savedInstanceState and sets content view to the activity login.
+     * It also identifies certain variables.
+     * @return void
+     * @param savedInstanceState
+     **/
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -80,18 +88,37 @@ public class LoginActivity extends AppCompatActivity {
 
             }
         });
-
+        /**
+         * This method, beforeTextChanged has no current changes
+         * @return void
+         * @param s
+         * @param start
+         * @param count
+         * @param after
+         **/
         TextWatcher afterTextChangedListener = new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
                 // ignore
             }
-
+            /**
+             * This method, onTextChanged has no current changes
+             * @return void
+             * @param s
+             * @param start
+             * @param before
+             * @param count
+             **/
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 // ignore
             }
 
+            /**
+             * This method, afterTextChanged changes the username & password
+             * @return void
+             * @param s
+             **/
             @Override
             public void afterTextChanged(Editable s) {
                 loginViewModel.loginDataChanged(usernameEditText.getText().toString(),
@@ -125,12 +152,22 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
+    /**
+     * This method, updateUiWithUser welcomes the user
+     * @return void
+     * @param model
+     **/
     private void updateUiWithUser(LoggedInUserView model) {
         String welcome = getString(R.string.welcome) + model.getDisplayName();
         // TODO : initiate successful logged in experience
         Toast.makeText(getApplicationContext(), welcome, Toast.LENGTH_LONG).show();
     }
 
+    /**
+     * This method, showLoginFailed lets user know that the login has failed
+     * @return void
+     * @param errorString
+     **/
     private void showLoginFailed(@StringRes Integer errorString) {
         Toast.makeText(getApplicationContext(), errorString, Toast.LENGTH_SHORT).show();
     }

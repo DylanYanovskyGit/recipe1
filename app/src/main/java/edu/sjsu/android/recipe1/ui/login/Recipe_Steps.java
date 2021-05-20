@@ -1,3 +1,5 @@
+//File: Recipe_Steps.java
+// Recipe Steps class that displays the application
 package edu.sjsu.android.recipe1.ui.login;
 
 import android.content.Intent;
@@ -12,7 +14,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 import edu.sjsu.android.recipe1.R;
-
+/**
+ * This is class that extends AppCompatActivity and is used to display the application
+ * @author tanupa thaker, katherine wu, dylan yanovsky, pushpal patil
+ **/
 public class Recipe_Steps extends  AppCompatActivity{
         ArrayList<String> steps;
         EditText textfield1;
@@ -23,12 +28,21 @@ public class Recipe_Steps extends  AppCompatActivity{
         EditRecipe recipe;
 
 
-
+    /**
+     * This method findViewById returns the View
+     * @return T extends View
+     * @param  id
+     **/
         @Override
         public <T extends View> T findViewById(int id) {
             return super.findViewById(id);
         }
 
+    /**
+     * This method onCreate create an instance of the paramaeter and sets the view by adding textFields & steps.
+     * @return void
+     * @param savedInstanceState
+     **/
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
